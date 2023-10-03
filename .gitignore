@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+screenshots/*
+
+# environment variables
+.env
+.env.production
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/test-results/
+/playwright-report/
+/playwright/.cache/
