@@ -55,6 +55,10 @@ async function reloadPage(page) {
   await page.route('**/*', (route) => {
     if (route.request().url().includes(requestToIntercept)) {
       requestIntercepted = true;
+      // uncomment to stop the site when the request is intercepted
+    /*   page.evaluate(() => {
+        debugger;
+      }); */
     }
 
     //allow CORS and disable cache
